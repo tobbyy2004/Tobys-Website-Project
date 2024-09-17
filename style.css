@@ -1,0 +1,234 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1em 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #007bff, #00d2d3);
+    color: white;
+    padding: 5em 2em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.hero .intro {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.hero .btn {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 0.75em 2em;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #fdd835;
+    color: #000;
+}
+
+/* Section Styling */
+main {
+    padding: 2em 2em;
+}
+
+section {
+    margin: 2em 0;
+}
+
+/* About Section */
+.about {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    text-align: center;
+    font-size: 1.2em;
+    animation: backgroundAnimation 10s infinite alternate;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1em;
+    border: 2px solid #007bff;
+}
+
+
+/* Projects Section */
+.projects {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    text-align: center;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1em;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #0056b3;
+}
+
+/* Contact Section */
+.contact {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    text-align: center;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.contact ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact ul li a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero .intro {
+        font-size: 1.2em;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #f5f7fa;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
